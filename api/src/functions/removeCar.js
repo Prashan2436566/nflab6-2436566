@@ -23,6 +23,7 @@ app.http('removeCar', {
                     body: JSON.stringify(datal) 
                 };
             }
+            //return { body: JSON.stringify(data) };
         }
         catch (error) {
             context.error(500, 'Removing Car err:', error);
