@@ -8,19 +8,19 @@ app.http('removeCar', {
     route: 'removeCar/{cId}',
     handler: async (request, context) => {
         try {
-            const index=request.params.cId;
+            const i=request.params.cId;
             const cars = await fs.readFile(path.resolve(__dirname, '../cars.json'), 'utf-8');
-            const data = JSON.parse(cars);
+            const datal = JSON.parse(cars);
 
-            if (index === -1) {
+            if (i === -1) {
                 context.error(404, 'CarNOtFOund');
             }
             else {
-                data.splice(index, 1);
-                await fs.writeFile(path.resolve(__dirname, '../cars.json'), JSON.stringify(data, null, 2));
+                datal.splice(i, 1);
+                await fs.writeFile(path.resolve(__dirname, '../cars.json'), JSON.stringify(datal, null, 2));
                 
                 return { 
-                    body: JSON.stringify(data) 
+                    body: JSON.stringify(datal) 
                 };
             }
         }

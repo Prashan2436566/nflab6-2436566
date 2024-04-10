@@ -8,7 +8,7 @@ app.http('addCar', {
     handler: async (request, context) => {
         try {
             const nCar = await request.json();
-            const cars = await fs.readFile(path.resolve(__dirname, '../cars.json'), 'utf-8');
+        const cars = await fs.readFile(path.resolve(__dirname, '../cars.json'), 'utf-8');
             const data = JSON.parse(cars);
             data.push(nCar);
             await fs.writeFile(path.resolve(__dirname, '../cars.json'), JSON.stringify(data, null, 2));
