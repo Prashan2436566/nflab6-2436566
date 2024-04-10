@@ -1,0 +1,20 @@
+[
+  {
+    "make": "Honda",
+    "model": "Accord",
+    "year": 2021,
+    "price": 200000
+  },
+  {
+    "make": "Ford",
+    "model": "Mustang",
+    "year": 2020,
+    "price": 300000
+  },
+  {
+    "make": "ef",
+    "model": "fjf",
+    "year": "2020",
+    "price": "133"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "nflab6-2436566": {
+      "appLocation": "src",
+      "apiLocation": "api",
+      "outputLocation": ".",
+      "apiLanguage": "node",
+      "apiVersion": "16",
+      "apiBuildCommand": "npm run build --if-present",
+      "appName": "nflab6-2436566",
+      "resourceGroup": "nflab6-2436566-rg"
+    }
+  }
+}
